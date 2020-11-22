@@ -1,5 +1,9 @@
+terraform {
+  required_version = "0.13.5"
+}
 provider "aws" {
-  region = "ap-northeast-1"
+  region  = "ap-northeast-1"
+  version = "3.16.0"
 }
 
 data "aws_iam_policy_document" "allow_describe_regions" {
