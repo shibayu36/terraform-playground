@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 resource "aws_vpc" "example" {
-  cidr_block = "192.168.0.0/16"
+  cidr_block = "192.168.0.0/24"
 }
 
 # data "aws_iam_policy_document" "allow_describe_regions" {
